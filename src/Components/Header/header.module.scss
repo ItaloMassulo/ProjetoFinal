@@ -1,0 +1,79 @@
+.header {
+    display: flex;
+    color: white;
+    background: linear-gradient(to right, #011C31, #015594);
+    align-items: center;
+    justify-content: space-between;
+    height: 20vh;
+
+}
+.containerLogo {
+    width: 23%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 25px;
+
+}
+
+.imgLivro {
+    padding-bottom: 20px;
+}
+.conteinerNav{
+    width: 30vw;
+    height: 100px;
+    ul{
+        display: flex;
+        height: 100%;
+        align-items: center;
+        justify-content: space-between;
+        font-size: 20px;
+        color: white;
+    }
+    
+}
+
+.link {
+    color: #ffffff;
+}
+.link:hover{
+    color:#ffffff9e;
+}
+
+
+
+.containerPesquisa {
+    display: flex;
+    border: solid, white, 2px;
+    border-radius: 20px;
+    padding: 5px 10px;
+    width: 268px;
+    margin-right: 10px;
+    border: solid, red;
+
+    input{
+        border: none;
+        background: none;
+        color: white;
+        font-size: 16px;
+        padding: 5px;
+        outline: none;
+        &::placeholder{
+            padding-left: 15%;
+            color: white;
+            transition: opacity 0.3s ease;
+        }
+        
+    }
+    
+    input:focus::placeholder{
+        opacity: 0;
+    }
+
+    button {
+        border: none;
+        background: none;
+        cursor: pointer;
+        padding: 0 5px;
+    }
+}
