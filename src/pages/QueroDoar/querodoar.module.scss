@@ -1,0 +1,35 @@
+.conteinerDoados{
+    height: 100vh;
+}
+
+.conteinerTitulo{
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    h2 {
+        font-size: 32px;
+    }
+}
+
+.conteinerCards{
+    border: solid, #005695, 3.5px;
+    border-radius: 20px;
+    margin-left: 8.5%;
+    width:16%;
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    img {
+        padding-bottom: 16%;
+    }
+
+    p {
+        text-align: center;
+        padding: 2%;
+    }
+}

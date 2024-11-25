@@ -10,7 +10,6 @@ export default function Inicio(){
             <section className={s.conteinerChamada}>
             <h2>VENHA FAZER PARTE DA MAIOR REDE DE DOAÇÃO</h2>
             </section>
-
             <h3 className={s.tituloCards}>Por que devo doar?</h3>
             <section className={s.conteinerAvisos}>
                 <article className={s.cards}>

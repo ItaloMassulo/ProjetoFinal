@@ -1,7 +1,36 @@
+import s from "./livrosdoados.module.scss"
+import iconelivro from "../../assets/Icone_doação.png"
 export default function LivrosDoados(){
     return(
-        <section>
-            <h1>teste livros Doados</h1>
+        <section className={s.conteinerTotal}>
+            <section className={s.conteinerTitulo}>
+                <h2>Por favor, preencha o formulário com suas informações e as informações do Livro</h2>
+            </section>
+
+            <section className={s.conteinerFormulario}>
+                <section className={s.blocoFormulario}>
+                    <section className={s.headerFormulario}>
+
+                    <img src={iconelivro} alt="Icone de um livro azul aberto" />
+                    <h3>Informações do Livro</h3>
+                    </section>
+                <form className={s.conteinerInputs} action="livros-doados" method="post">
+                <label>
+                    <input type="text" name="" id="" placeholder="Título" required/>
+                </label>
+                <label>
+                    <input type="text" name="" id="" placeholder="Categoria" required/>
+                </label>
+                <label>
+                    <input type="text" name="" id="" placeholder="Autor" required/>
+                </label>
+                <label>
+                    <input type="url" name="" id="" placeholder="Link da Imagem" required/>
+                </label>
+                <button type="submit">Doar</button>
+                </form>
+                </section>
+            </section>
         </section>
     )
 }
