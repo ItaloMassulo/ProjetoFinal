@@ -1,6 +1,6 @@
 import s from "./footer.module.scss"
 import logofacebook from "../../assets/footer_logos/Logo1Facebook.png"
-import logoTwitter from "../../assets/footer_logos/Logo2twitter.png"
+import logoTwitter from "../../assets/footer_logos/Logo2Twitter.png"
 import logoYoutube from "../../assets/footer_logos/Logo3Youtube.png"
 import logoLinkedin from "../../assets/footer_logos/Logo4LinkedIn.png"
 import logoInstagram from "../../assets/footer_logos/Logo5Instagram.png"
