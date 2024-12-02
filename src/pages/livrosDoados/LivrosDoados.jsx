@@ -1,35 +1,16 @@
 import s from "./livrosdoados.module.scss"
-import iconelivro from "../../assets/Icone_doação.png"
-export default function LivrosDoados(){
+import livro1 from "../../assets/livro_protagonista.png"
+export default function queroDoar(){
     return(
-        <section className={s.conteinerTotal}>
+        <section className={s.conteinerDoados}>
             <section className={s.conteinerTitulo}>
-                <h2>Por favor, preencha o formulário com suas informações e as informações do Livro</h2>
+                <p>Livros Doados</p>
             </section>
-
-            <section className={s.conteinerFormulario}>
-                <section className={s.blocoFormulario}>
-                    <section className={s.headerFormulario}>
-
-                    <img src={iconelivro} alt="Icone de um livro azul aberto" />
-                    <h3>Informações do Livro</h3>
-                    </section>
-                <form className={s.conteinerInputs} action="livros-doados" method="post">
-                <label>
-                    <input type="text" name="" id="" placeholder="Título" required/>
-                </label>
-                <label>
-                    <input type="text" name="" id="" placeholder="Categoria" required/>
-                </label>
-                <label>
-                    <input type="text" name="" id="" placeholder="Autor" required/>
-                </label>
-                <label>
-                    <input type="url" name="" id="" placeholder="Link da Imagem" required/>
-                </label>
-                <button type="submit">Doar</button>
-                </form>
-                </section>
+            <section className={s.conteinerCards}>
+                <img src={livro1} alt="Imagem de um livro de capa vermelha com o título 'PROTAGONISTA'" />
+                <p>O Protagonista</p>
+                <p>Susanne Andrade</p>
+                <p>Ficção</p>
             </section>
         </section>
     )

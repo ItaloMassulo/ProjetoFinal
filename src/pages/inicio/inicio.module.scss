@@ -5,9 +5,7 @@
 
     background-image: url("../../assets/background_Inicio.png");
     background-size: cover;
-    background-position: center;
     height: 80vh;
-    display: flex;
     font-weight: 700;
 
     h2{
@@ -55,4 +53,38 @@
     align-items: end;
     padding-left: 60px;
     font-weight: 500;
+}
+
+@media (max-width: 780px){
+    .conteinerChamada{
+        background-position: center;
+        height: 50vh;
+
+        h2 {
+            width: 100%;
+            font-size: 33px;
+            text-align: center;
+        }
+    }
+    .tituloCards {
+        align-items: center;
+    }
+    .conteinerAvisos{
+        display: flex;
+        flex-direction: column;
+        height: 150vh;
+        gap: 20px;
+    }
+    .cards{
+        width: 70vw;
+        height: 65vw;
+
+        img {
+            height: 70px;
+        }
+
+        p{
+            text-align: center;
+        }
+    }
 }

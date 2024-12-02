@@ -7,7 +7,7 @@ import logoInstagram from "../../assets/footer_logos/Logo5Instagram.png"
 
 export default function Footer(){
     return(
-        <footer className={s.footer}>
+        <footer>
             <section className={s.containerFooter}>
                 <p>4002-8922</p>
                 <nav>
