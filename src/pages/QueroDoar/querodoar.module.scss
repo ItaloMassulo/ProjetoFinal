@@ -93,6 +93,17 @@
         color: white;
         width:70%;
         height: 13%;
+        transition: background-color 0.3s ease, transform 0.2 ease;
+        cursor: pointer;
+
+        &:hover {
+            background-color: #003f73;
+            transform: scale (1.05);
+        }
+
+        &:active {
+            transform: scale(1.1)
+        }
     }
 }
 
