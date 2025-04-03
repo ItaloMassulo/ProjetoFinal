@@ -1,20 +1,25 @@
 .conteinerDoados{
     height: 100vh;
-}
 
-.conteinerTitulo{
-    height: 10%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    p {
+    h2 {
+        height: 10%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         font-size: 32px;
         font-weight: 700;
     }
 }
 
+
 .conteinerCards{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    justify-content: center;
+    align-items: center;
+
+    section {
     border: solid, #005695, 3.5px;
     border-radius: 20px;
     margin-left: 8.5%;
@@ -25,8 +30,13 @@
     align-items: center;
     justify-content: center;
 
+        div {
+            text-align: center;
+        }}
+
     img {
         padding-bottom: 16%;
+        width: 50%
     }
 
     p {

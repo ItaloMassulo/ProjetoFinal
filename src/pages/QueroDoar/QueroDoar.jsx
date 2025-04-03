@@ -2,7 +2,7 @@ import s from "./querodoar.module.scss"
 import iconelivro from "../../assets/Icone_doação.png"
 import { useState } from "react"
 import axios from "axios"
-export default function LivrosDoados(){
+export default function QueroDoar(){
 
     const [titulo,setTitulo] = useState("")
     const [categoria,setCategoria] = useState("")

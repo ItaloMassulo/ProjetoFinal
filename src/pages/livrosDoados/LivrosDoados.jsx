@@ -1,16 +1,37 @@
 import s from "./livrosdoados.module.scss"
-import livro1 from "../../assets/livro_protagonista.png"
-export default function queroDoar(){
+// import livro1 from "../../assets/livro_protagonista.png"
+import { useState, useEffect } from "react"
+import axios from "axios"
+
+export default function LivrosDoados(){
+
+    const [livros, setLivros] = useState([])
+
+    const puxarLivros = async () => {
+        const resposta = await axios.get("https://api-livros-xqbv.onrender.com/livros")
+        console.log(resposta.data)
+        setLivros(resposta.data);
+    } 
+
+    useEffect(() => {
+        puxarLivros()
+    },[])
+
     return(
         <section className={s.conteinerDoados}>
-            <section className={s.conteinerTitulo}>
-                <p>Livros Doados</p>
-            </section>
+        <h2>Livros Doados</h2>
             <section className={s.conteinerCards}>
-                <img src={livro1} alt="Imagem de um livro de capa vermelha com o título 'PROTAGONISTA'" />
-                <p>O Protagonista</p>
-                <p>Susanne Andrade</p>
-                <p>Ficção</p>
+            {livros.map((item) => (
+                // eslint-disable-next-line react/jsx-key
+                <section>
+                    <div>
+                        <h3>{item.titulo}</h3>
+                        <img src={item.image_url} alt={item.titulo} />
+                        <p>{item.autor}</p>
+                        <p>{item.categoria}</p>
+                    </div>
+                </section>
+            ))}
             </section>
         </section>
     )
